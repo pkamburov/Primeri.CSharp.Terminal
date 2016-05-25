@@ -46,7 +46,7 @@ namespace Modul02
 			Console.WriteLine (a);
 
 			Console.WriteLine ("Division: " + (7 / 3).ToString ()); // -> 2 (7 / 3 = 2,3333)
-			Console.WriteLine ("Division: " + (7 % 3).ToString ()); // -> 1 (1 / 3 = 0,3333)
+			Console.WriteLine ("Division: " + (7 % 3).ToString ()); // -> 1 (1 / 3 = 0,3333) 
 
 		}
 	}
