@@ -14,7 +14,7 @@ namespace Modul02
 
 			//Примери
 
-			a = 55; 
+			a = 5; 
 			b = 10;
 			sum = a + b;
 
@@ -24,7 +24,26 @@ namespace Modul02
 			Console.Write ( b );
 			Console.Write (" = ");
 			Console.WriteLine ( sum );
+
+			//Допълнителни оператори
+			Console.WriteLine ("\nHow to use +=");
+			a += b; //a = 10 + 5, a = a + b;
+			Console.WriteLine ( a );
+
+			Console.WriteLine ("\nHow to use -=");
+			a -= b;
+			Console.WriteLine (a);
+
+			Console.WriteLine ("\nHow to use *=");
+			a *= b;
+			Console.WriteLine (a);
+
+			Console.WriteLine ("\nHow to use ++");
+			a++;
+			Console.WriteLine (a);
 			Console.ReadLine ();
+
+
 
 
 		}
