@@ -6,19 +6,21 @@ namespace TableProject
 	{
 		public static void Main (string[] args)
 		{
-			string[] row = new string[3];
+			//Дефиниране на таблица
+			string[,] table = new string[2, 3];
 
-			row [0] = "Row 1";
-			row [1] = "Row 2";
-			row [2] = "Row 3";
+			//Въвеждане на първи ред
+			table[0, 0] = "John"; table[0, 1] = "Doe"; table[0, 2] = "29";
 
-			Console.WriteLine ("Array row: " + row[0] + ", " + row[1] + ", " + row[2] + "\n");
+			//Въвеждане на втори ред
+			table[1, 0] = "Dohn"; table[1, 1] = "Joe"; table[1, 2] = "41";
 
-			string[] parse = "1,2,3,4,5,6,7,8,9".Split (',');
-			Console.WriteLine ("Array length:\n" + "1,2,3,4,5,6,7,8,9\n\nis:" + parse.Length);
+			//Печат
+			Console.Write ("Wich row you want to see: ");
+			int _index = Convert.ToInt32 (Console.ReadLine ()) - 1;
 
-			string list1 = string.Join (";", parse);
-			Console.WriteLine ("New String is:\n" + list1 + "\n\n");
+			Console.WriteLine ((table[_index, 0])[0] + ". " + table[_index, 1] + ", " + table[_index, 2] + " " +
+				"r.");
 		}
 	}
 }
